@@ -23,6 +23,12 @@ tree.setup {
   hijack_netrw = true,
   view = {
     adaptive_size = true,
+    mappings = {
+      custom_only = false,
+      list = {
+        { key = "u", action = "dir_up" },
+      }
+    },
   },
   filters = {
     custom = { ".git" },
