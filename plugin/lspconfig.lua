@@ -85,14 +85,16 @@ nvim_lsp.flow.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
-nvim_lsp.tsserver.setup {
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript" },
-  cmd = { "typescript-language-server", "--stdio" },
-  capabilities = capabilities,
-  on_attach = function(client)
-    client.resolved_capabilities.document_formatting = false
-  end,
-}
+nvim_lsp.tsserver.setup{}
+
+-- nvim_lsp.tsserver.setup {
+--   filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript" },
+--   cmd = { "typescript-language-server", "--stdio" },
+--   capabilities = capabilities,
+--   on_attach = function(client)
+--     client.resolved_capabilities.document_formatting = false
+--   end,
+-- }
 
 nvim_lsp.sourcekit.setup {
   on_attach = on_attach,
