@@ -37,7 +37,12 @@ local keymap = {
       c = { "<cmd>lua require('telescope.builtin').git_commits()<CR>", "LazyGit" },
       h = { "<cmd>Gitsigns preview_hunk<CR>", "Hunk" }
     },
-    s = { "<cmd>luafile %<cr>", "Source file" }
+    s = { "<cmd>luafile %<cr>", "Source file" },
+    l = {
+      name = "+Lsp",
+      a = { "<cmd>Lspsaga code_action<CR>", "Code Action" },
+      f = { "<cmd>lua vim.lsp.buf.formatting()<CR>", "Formatting" },
+    }
   }
 }
 
@@ -56,19 +61,19 @@ local function code_keymap()
     -- local fname = vim.fn.expand "%:p:t"
     -- local keymap_c = {} -- normal key map
     local keymap_c_v = {} -- visual key map
-    if ft == "typescript" or ft == "typescriptreact" or ft == "javascript" or ft == "javascriptreact" then
-      keymap_c = {
-        name = "Code",
-        o = { "<cmd>TypescriptOrganizeImports<cr>", "Organize Imports" },
-        r = { "<cmd>TypescriptRenameFile<cr>", "Rename File" },
-        i = { "<cmd>TypescriptAddMissingImports<cr>", "Import Missing" },
-        F = { "<cmd>TypescriptFixAll<cr>", "Fix All" },
-        u = { "<cmd>TypescriptRemoveUnused<cr>", "Remove Unused" },
-        R = { "<cmd>lua require('config.neotest').javascript_runner()<cr>", "Choose Test Runner" },
-        -- s = { "<cmd>2TermExec cmd='yarn start'<cr>", "Yarn Start" },
-        -- t = { "<cmd>2TermExec cmd='yarn test'<cr>", "Yarn Test" },
-      }
-    elseif ft == "java" then
+    -- if ft == "typescript" or ft == "typescriptreact" or ft == "javascript" or ft == "javascriptreact" then
+    --   keymap_c = {
+    --     name = "Code",
+    --     o = { "<cmd>TypescriptOrganizeImports<cr>", "Organize Imports" },
+    --     r = { "<cmd>TypescriptRenameFile<cr>", "Rename File" },
+    --     i = { "<cmd>TypescriptAddMissingImports<cr>", "Import Missing" },
+    --     F = { "<cmd>TypescriptFixAll<cr>", "Fix All" },
+    --     u = { "<cmd>TypescriptRemoveUnused<cr>", "Remove Unused" },
+    --     R = { "<cmd>lua require('config.neotest').javascript_runner()<cr>", "Choose Test Runner" },
+    --     -- s = { "<cmd>2TermExec cmd='yarn start'<cr>", "Yarn Start" },
+    --     -- t = { "<cmd>2TermExec cmd='yarn test'<cr>", "Yarn Test" },
+    --   }
+    if ft == "java" then
       keymap_c = {
         name = "Code",
         o = { "<cmd>lua require'jdtls'.organize_imports()<cr>", "Organize Imports" },
@@ -76,6 +81,7 @@ local function code_keymap()
         c = { "<cmd>lua require('jdtls').extract_constant()<cr>", "Extract Constant" },
         t = { "<cmd>lua require('jdtls').test_class()<cr>", "Test Class" },
         n = { "<cmd>lua require('jdtls').test_nearest_method()<cr>", "Test Nearest Method" },
+        u = { "<cmd>JdtUpdateConfig<cr>", "Update Config" },
       }
       keymap_c_v = {
         name = "Code",

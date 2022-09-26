@@ -9,8 +9,8 @@ vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<CR>', opts)
 vim.keymap.set('n', 'gh', '<Cmd>Lspsaga lsp_finder<CR>', opts)
 -- vim.keymap.set('i', '<C-k>', '<Cmd>Lspsaga signature_help<CR>', opts)           -- Don't work anymore
 vim.keymap.set('n', 'gp', '<Cmd>Lspsaga peek_definition<CR>', opts)
-vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
-vim.keymap.set("n", "<leader>la", "<cmd>Lspsaga code_action<CR>")
+vim.keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>", opts)
+-- vim.keymap.set("n", "<leader>la", "<cmd>Lspsaga code_action<CR>")
 -- vim.keymap.set("n", "<leader>i", "<cmd>LSoutlineToggle<CR>")
 
 

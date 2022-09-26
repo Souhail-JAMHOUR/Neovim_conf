@@ -232,7 +232,10 @@ ins_left {
 
 ins_right { 'location' }
 
+
 ins_right { 'progress', color = { fg = colors.fg, gui = 'bold' } }
+
+ins_right { 'filetype' }
 
 -- ins_right {
 --   'o:encoding', -- option component same as &encoding in viml

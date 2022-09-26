@@ -74,7 +74,7 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'nvim-telescope/telescope-project.nvim'
-
+  use { 'nvim-telescope/telescope-ui-select.nvim' }
   -- Database
   use { 'tpope/vim-dadbod' }
   use { 'kristijanhusak/vim-dadbod-ui' }

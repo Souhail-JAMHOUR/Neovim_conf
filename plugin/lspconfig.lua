@@ -80,12 +80,13 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(
   vim.lsp.protocol.make_client_capabilities()
 )
 
+nvim_lsp.lemminx.setup {}
 
 nvim_lsp.flow.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
-nvim_lsp.tsserver.setup{}
+nvim_lsp.tsserver.setup {}
 
 -- nvim_lsp.tsserver.setup {
 --   filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript" },

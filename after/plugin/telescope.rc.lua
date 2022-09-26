@@ -18,6 +18,11 @@ telescope.setup {
     },
   },
   extensions = {
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown {
+        -- even more opts
+      }
+    },
     file_browser = {
       theme = "dropdown",
       -- disables netrw and use telescope-file-browser in its place
@@ -43,7 +48,7 @@ telescope.setup {
 
 telescope.load_extension("file_browser")
 telescope.load_extension('project')
-
+telescope.load_extension("ui-select")
 -- vim.keymap.set('n', ';f',
 --   function()
 --     builtin.find_files({
