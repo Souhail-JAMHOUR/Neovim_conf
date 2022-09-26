@@ -58,6 +58,7 @@ packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use 'norcalli/nvim-colorizer.lua'
   use 'akinsho/nvim-bufferline.lua'
+  use 'goolord/alpha-nvim'
 
   --colorscheme
 

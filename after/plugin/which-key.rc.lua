@@ -12,6 +12,7 @@ local keymap = {
       name = "+Find",
       b = { "<cmd>lua require('telescope.builtin').buffers()<cr>", "Buffers" },
       h = { "<cmd>lua require('telescope.builtin').help_tags()<cr>", "Help" },
+      f = { "<cmd>lua require('telescope.builtin').find_files()<cr>", "Find Files" },
       m = { "<cmd>lua require('telescope.builtin').marks()<cr>", "Marks" },
       o = { "<cmd>lua require('telescope.builtin').oldfiles()<cr>", "Old Files" },
       g = { "<cmd>lua require('telescope.builtin').live_grep()<cr>", "Live Grep" },
