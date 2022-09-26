@@ -5,8 +5,8 @@ vim.opt.wildoptions = 'pum'
 vim.opt.pumblend = 5
 vim.opt.background = 'dark'
 
-vim.cmd [[colorscheme darkplus]]
+vim.cmd [[colorscheme catppuccin]]
 
 
 
--- vim.g.catppuccin_flavour = "mocha"
+vim.g.catppuccin_flavour = "mocha"

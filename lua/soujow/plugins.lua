@@ -14,7 +14,6 @@ packer.startup(function(use)
   }
   use 'nvim-lualine/lualine.nvim' -- Statusline
   use 'nvim-lua/plenary.nvim' -- Common utilities
-  use 'mfussenegger/nvim-jdtls'
 
 
   --LSP
@@ -25,6 +24,7 @@ packer.startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
+  use 'mfussenegger/nvim-jdtls'
 
   --Completion
 
