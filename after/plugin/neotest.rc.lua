@@ -5,10 +5,8 @@ end
 
 neo.setup {
   adapters = {
-    require "neotest-python" {
-      dap = { justMyCode = false },
-      runner = "unittest",
-    },
+    require "neotest-python",
     require("neotest-plenary"),
+    require("neotest-vim-test"),
   },
 }

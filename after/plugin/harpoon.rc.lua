@@ -14,7 +14,7 @@ local km = {
     h = {
       name = "harpoon",
       a = { '<cmd>lua require("harpoon.mark").add_file()<CR>', "Add_File" },
-      t = { '<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>', "Toggle_quick_menu" },
+      h = { '<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>', "Toggle_quick_menu" },
     }
   }
 }

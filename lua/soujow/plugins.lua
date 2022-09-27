@@ -73,14 +73,15 @@ packer.startup(function(use)
   use {
     "nvim-neotest/neotest",
     requires = {
-      "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
       "antoinemadec/FixCursorHold.nvim",
       "nvim-neotest/neotest-python",
       "nvim-neotest/neotest-go",
-      "nvim-neotest/neotest-plenary"
+      "nvim-neotest/neotest-plenary",
+      "nvim-neotest/neotest-vim-test"
     }
   }
+  use 'vim-test/vim-test'
 
 
 

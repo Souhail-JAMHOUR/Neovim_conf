@@ -224,6 +224,11 @@ _G.packer_plugins = {
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/neotest-python",
     url = "https://github.com/nvim-neotest/neotest-python"
   },
+  ["neotest-vim-test"] = {
+    loaded = true,
+    path = "/home/souhail/.local/share/nvim/site/pack/packer/start/neotest-vim-test",
+    url = "https://github.com/nvim-neotest/neotest-vim-test"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -373,6 +378,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/vim-snippets",
     url = "https://github.com/honza/vim-snippets"
+  },
+  ["vim-test"] = {
+    loaded = true,
+    path = "/home/souhail/.local/share/nvim/site/pack/packer/start/vim-test",
+    url = "https://github.com/vim-test/vim-test"
   },
   ["vista.vim"] = {
     loaded = true,
