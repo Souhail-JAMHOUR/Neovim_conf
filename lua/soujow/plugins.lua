@@ -59,7 +59,8 @@ packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
   use 'akinsho/nvim-bufferline.lua'
   use 'goolord/alpha-nvim'
-  -- use 'fgheng/winbar.nvim'
+  use 'SmiteshP/nvim-gps'
+  use 'fgheg/winbar.nvim'
 
   --colorscheme
 

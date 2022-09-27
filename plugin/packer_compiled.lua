@@ -279,6 +279,11 @@ _G.packer_plugins = {
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
+  ["nvim-gps"] = {
+    loaded = true,
+    path = "/home/souhail/.local/share/nvim/site/pack/packer/start/nvim-gps",
+    url = "https://github.com/SmiteshP/nvim-gps"
+  },
   ["nvim-jdtls"] = {
     loaded = true,
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
