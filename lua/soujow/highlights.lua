@@ -5,8 +5,10 @@ vim.opt.wildoptions = 'pum'
 vim.opt.pumblend = 5
 vim.opt.background = 'dark'
 
-vim.cmd [[colorscheme catppuccin]]
+require('onedark').setup {
+  style = 'deep'
+}
+require('onedark').load()
 
-
-
-vim.g.catppuccin_flavour = "mocha"
+-- vim.cmd [[colorscheme gruvbox]]
+-- vim.g.catppuccin_flavour = "mocha"

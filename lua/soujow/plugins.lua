@@ -64,6 +64,25 @@ packer.startup(function(use)
 
   use 'LunarVim/darkplus.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
+  use 'shaunsingh/moonlight.nvim'
+  use 'morhetz/gruvbox'
+  use 'navarasu/onedark.nvim'
+
+  --Test
+
+  use {
+    "nvim-neotest/neotest",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-neotest/neotest-python",
+      "nvim-neotest/neotest-go",
+      "nvim-neotest/neotest-plenary"
+    }
+  }
+
+
 
   --Git
   use 'akinsho/toggleterm.nvim'
