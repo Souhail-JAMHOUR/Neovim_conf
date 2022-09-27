@@ -59,6 +59,7 @@ packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
   use 'akinsho/nvim-bufferline.lua'
   use 'goolord/alpha-nvim'
+  -- use 'fgheng/winbar.nvim'
 
   --colorscheme
 
@@ -103,7 +104,6 @@ packer.startup(function(use)
 
   -- utilities
   use 'rcarriga/nvim-notify'
-  -- use 'preservim/tagbar'
   use 'liuchengxu/vista.vim'
   use 'NTBBloodbath/rest.nvim'
   use 'windwp/nvim-autopairs'
