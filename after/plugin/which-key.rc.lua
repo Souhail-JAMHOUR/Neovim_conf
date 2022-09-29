@@ -19,7 +19,7 @@ local keymap = {
       c = { "<cmd>lua require('telescope.builtin').commands()<cr>", "Commands" },
       r = { "<cmd>lua require'telescope'.extensions.file_browser.file_browser()<cr>", "File Browser" },
       w = { "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>", "Current Buffer" },
-      p = { "<cmd>lua require'telescope'.extensions.project.project{display_type = 'full'}<cr>", "List" },
+      p = { "<cmd>lua require'telescope'.extensions.projects.projects{display_type = 'full'}<cr>", "List" },
     },
     d = {
       name = "+Debugger",

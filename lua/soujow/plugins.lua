@@ -60,7 +60,7 @@ packer.startup(function(use)
   use 'akinsho/nvim-bufferline.lua'
   use 'goolord/alpha-nvim'
   use 'SmiteshP/nvim-gps'
-  use 'fgheg/winbar.nvim'
+  use { 'fgheng/winbar.nvim' }
 
   --colorscheme
 
@@ -79,8 +79,8 @@ packer.startup(function(use)
       "antoinemadec/FixCursorHold.nvim",
       "nvim-neotest/neotest-python",
       "nvim-neotest/neotest-go",
-      "nvim-neotest/neotest-plenary",
-      "nvim-neotest/neotest-vim-test"
+      "nvim-neotest/neotest-vim-test",
+      "Issafalcon/neotest-dotnet"
     }
   }
   use 'vim-test/vim-test'
@@ -96,7 +96,17 @@ packer.startup(function(use)
   --Telescope
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
-  use 'nvim-telescope/telescope-project.nvim'
+  -- use 'nvim-telescope/telescope-project.nvim'
+  use {
+    "ahmedkhalf/project.nvim",
+    config = function()
+      require("project_nvim").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
   use { 'nvim-telescope/telescope-ui-select.nvim' }
   -- Database
   use { 'tpope/vim-dadbod' }

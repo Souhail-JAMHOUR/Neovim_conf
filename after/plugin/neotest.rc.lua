@@ -5,8 +5,8 @@ end
 
 neo.setup {
   adapters = {
-    require "neotest-python",
-    require("neotest-plenary"),
     require("neotest-vim-test"),
+    require("neotest-python"),
+    require("neotest-dotnet")
   },
 }

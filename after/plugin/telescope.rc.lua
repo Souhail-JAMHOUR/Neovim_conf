@@ -47,7 +47,8 @@ telescope.setup {
 }
 
 telescope.load_extension("file_browser")
-telescope.load_extension('project')
+-- telescope.load_extension('project')
+telescope.load_extension('projects')
 telescope.load_extension("ui-select")
 vim.keymap.set("n", "sf", function()
   telescope.extensions.file_browser.file_browser({
