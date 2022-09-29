@@ -74,7 +74,15 @@ nvim_lsp.omnisharp.setup {
 }
 
 
-nvim_lsp.pyright.setup {}
+nvim_lsp.pyright.setup {
+  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "off",
+      },
+    },
+  },
+}
 -- Set up completion using nvim_cmp with LSP source
 local capabilities = require('cmp_nvim_lsp').update_capabilities(
   vim.lsp.protocol.make_client_capabilities()
@@ -86,6 +94,7 @@ nvim_lsp.flow.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
+
 nvim_lsp.tsserver.setup {}
 
 -- nvim_lsp.tsserver.setup {

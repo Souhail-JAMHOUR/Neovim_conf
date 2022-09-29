@@ -66,7 +66,6 @@ M.on_attach = function(client, bufnr)
 
   if client.name == "tsserver" then
     client.server_capabilities.document_formatting = false
-    vim.notify("hani")
   end
 
   if client.name == "jdtls" then
