@@ -164,6 +164,11 @@ _G.packer_plugins = {
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/legendary.nvim",
     url = "https://github.com/mrjones2014/legendary.nvim"
   },
+  ["lsp-inlayhints.nvim"] = {
+    loaded = true,
+    path = "/home/souhail/.local/share/nvim/site/pack/packer/start/lsp-inlayhints.nvim",
+    url = "https://github.com/lvimuser/lsp-inlayhints.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/lspkind-nvim",

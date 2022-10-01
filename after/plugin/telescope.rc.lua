@@ -17,6 +17,11 @@ telescope.setup {
       },
     },
   },
+  pickers = {
+    find_files = {
+      theme = "dropdown",
+    }
+  },
   extensions = {
     ["ui-select"] = {
       require("telescope.themes").get_dropdown {
@@ -36,7 +41,6 @@ telescope.setup {
           -- your custom normal mode mappings
           ["N"] = fb_actions.create,
           ["h"] = fb_actions.goto_parent_dir,
-          ["l"] = fb_actions.change_cwd,
           ["/"] = function()
             vim.cmd('startinsert')
           end
