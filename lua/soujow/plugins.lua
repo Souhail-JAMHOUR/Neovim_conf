@@ -49,6 +49,7 @@ packer.startup(function(use)
     use "rcarriga/nvim-dap-ui"
     use 'theHamsta/nvim-dap-virtual-text'
     use 'mfussenegger/nvim-dap-python'
+    use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
 
 
     -- UI
