@@ -5,4 +5,4 @@ if not status then
 end
 
 
-surron.setup {}
+surron.setup()
