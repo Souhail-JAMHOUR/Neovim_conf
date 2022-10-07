@@ -1,5 +1,4 @@
-local status, surron = pcall(require, "nvim-surrond")
-
+local status, surron = pcall(require, "nvim-surround")
 if not status then
     return
 end
