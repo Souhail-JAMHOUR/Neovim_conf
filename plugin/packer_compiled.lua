@@ -370,6 +370,11 @@ _G.packer_plugins = {
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
   },
+  ["telescope-repo.nvim"] = {
+    loaded = true,
+    path = "/home/souhail/.local/share/nvim/site/pack/packer/start/telescope-repo.nvim",
+    url = "https://github.com/cljoly/telescope-repo.nvim"
+  },
   ["telescope-ui-select.nvim"] = {
     loaded = true,
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim",

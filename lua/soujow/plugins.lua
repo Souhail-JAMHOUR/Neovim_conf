@@ -97,6 +97,7 @@ packer.startup(function(use)
 
     --Telescope
     use 'nvim-telescope/telescope.nvim'
+    use 'cljoly/telescope-repo.nvim'
     use 'nvim-telescope/telescope-file-browser.nvim'
     -- use 'nvim-telescope/telescope-project.nvim'
     use {

@@ -2,9 +2,9 @@ local status, saga = pcall(require, "lspsaga")
 if (not status) then return end
 
 saga.init_lsp_saga({
-  symbol_in_winbar = {
-    in_custom = true
-  }
+    symbol_in_winbar = {
+        in_custom = true
+    },
 })
 -- local action = require("lspsaga.codeaction")
 local opts = { noremap = true, silent = true }

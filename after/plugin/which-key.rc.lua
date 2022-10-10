@@ -53,7 +53,8 @@ local keymap = {
             f = { "<cmd>lua require('telescope.builtin').git_files()<CR>", "git_files" },
             b = { "<cmd>lua require('telescope.builtin').git_branches()<CR>", "git_branches" },
             c = { "<cmd>lua require('telescope.builtin').git_commits()<CR>", "git_commits" },
-            h = { "<cmd>Gitsigns preview_hunk<CR>", "Hunk" }
+            h = { "<cmd>Gitsigns preview_hunk<CR>", "Hunk" },
+            r = { "<cmd>lua require'telescope'.extensions.repo.list{}<CR>", "git_repo" }
         },
         s = { "<cmd>luafile %<cr>", "Source file" },
         l = {

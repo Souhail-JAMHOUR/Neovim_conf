@@ -31,7 +31,6 @@ telescope.setup {
         file_browser = {
             theme = "dropdown",
             -- disables netrw and use telescope-file-browser in its place
-            -- hijack_netrw = true,
             mappings = {
                 -- your custom insert mode mappings
                 ["i"] = {
@@ -51,13 +50,15 @@ telescope.setup {
 }
 
 telescope.load_extension("file_browser")
--- telescope.load_extension('project')
+telescope.load_extension("repo")
 telescope.load_extension('projects')
 telescope.load_extension("ui-select")
+telescope.load_extension('harpoon')
 vim.keymap.set("n", "sf", function()
     telescope.extensions.file_browser.file_browser({
         path = "%:p:h",
         cwd = telescope_buffer_dir(),
+        theme = "dropdown",
         respect_gitignore = false,
         hidden = true,
         grouped = true,
@@ -66,4 +67,3 @@ vim.keymap.set("n", "sf", function()
         layout_config = { height = 40 }
     })
 end)
---

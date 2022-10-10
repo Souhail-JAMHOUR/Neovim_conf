@@ -259,7 +259,7 @@ local branch = {
     -- cond = hide_in_width_100,
     fmt = function(str)
         if str == "" or str == nil then
-            return "!=vcs"
+            return ""
         end
 
         return str
@@ -459,7 +459,7 @@ lualine.setup {
     },
     sections = {
         lualine_a = { left_pad, mode, branch, right_pad },
-        lualine_b = { left_pad_alt, diagnostics, right_pad_alt },
+        lualine_b = { diagnostics },
         -- lualine_c = {},
         lualine_c = { current_signature },
         -- lualine_x = { diff, spaces, "encoding", filetype },
