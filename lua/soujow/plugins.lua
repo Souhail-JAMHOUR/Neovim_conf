@@ -26,22 +26,40 @@ packer.startup(function(use)
     use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
     use 'mfussenegger/nvim-jdtls'
     use 'lvimuser/lsp-inlayhints.nvim'
+    use "j-hui/fidget.nvim"
 
     --Completion
 
+    use 'hrsh7th/nvim-cmp' -- Completion
     use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
     use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-    use 'hrsh7th/nvim-cmp' -- Completion
     use 'hrsh7th/cmp-path' -- Path
-    use 'hrsh7th/cmp-nvim-lsp-signature-help'
-    use "honza/vim-snippets"
+    use 'saadparwaiz1/cmp_luasnip'
     use 'folke/which-key.nvim' -- Keymaps helper with leader
     use 'mrjones2014/legendary.nvim'
     use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
-    use "rafamadriz/friendly-snippets"
-    use 'saadparwaiz1/cmp_luasnip'
     use { 'tzachar/cmp-tabnine', run = './install.sh', requires = 'hrsh7th/nvim-cmp' }
+    use "ray-x/lsp_signature.nvim"
+
+
+    --snippet
+
     use 'L3MON4D3/LuaSnip'
+    use "honza/vim-snippets"
+    use "rafamadriz/friendly-snippets"
+
+
+    --Treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+    use 'windwp/nvim-ts-autotag'
+    use 'nvim-treesitter/nvim-treesitter-context'
+    use "JoosepAlviste/nvim-ts-context-commentstring"
+    use "p00f/nvim-ts-rainbow"
+    use "nvim-treesitter/nvim-treesitter-textobjects"
+
 
     -- Debugging
 
@@ -53,10 +71,6 @@ packer.startup(function(use)
 
 
     -- UI
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
     use 'kyazdani42/nvim-web-devicons' -- File icons
     use 'norcalli/nvim-colorizer.lua'
     use 'akinsho/nvim-bufferline.lua'
@@ -124,7 +138,6 @@ packer.startup(function(use)
     use 'windwp/nvim-autopairs'
     use "terrortylor/nvim-comment"
     use 'ThePrimeagen/harpoon'
-    use 'windwp/nvim-ts-autotag'
     use 'folke/zen-mode.nvim'
     use({
         "iamcco/markdown-preview.nvim",
