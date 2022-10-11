@@ -22,11 +22,10 @@ packer.startup(function(use)
     use 'onsails/lspkind-nvim' -- vscode-like pictograms
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
-    use 'glepnir/lspsaga.nvim' -- LSP UIs
+    use { 'glepnir/lspsaga.nvim', branch = "main" } -- LSP UIs
     use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
     use 'mfussenegger/nvim-jdtls'
     use 'lvimuser/lsp-inlayhints.nvim'
-    use "j-hui/fidget.nvim"
 
     --Completion
 

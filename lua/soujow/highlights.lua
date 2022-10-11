@@ -5,10 +5,10 @@ vim.opt.wildoptions = 'pum'
 vim.opt.pumblend = 5
 vim.opt.background = 'dark'
 
--- require('onedark').setup {
---     style = 'deep'
--- }
--- require('onedark').load()
+require('onedark').setup {
+    style = 'deep'
+}
+require('onedark').load()
 
-vim.cmd [[colorscheme darkplus]]
+-- vim.cmd [[colorscheme darkplus]]
 -- vim.g.catppuccin_flavour = "mocha"
