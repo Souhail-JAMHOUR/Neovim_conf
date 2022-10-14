@@ -1,6 +1,4 @@
 vim.cmd("autocmd!")
-vim.g.loaded = 1
-vim.g.loaded_netrwPlugin = 1
 
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'

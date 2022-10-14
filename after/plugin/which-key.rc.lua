@@ -9,6 +9,8 @@ local keymap_j = {}
 
 local keymap = {
     ["<leader>"] = {
+        w = { "<cmd>update!<CR>", "Save" },
+        q = { '<cmd>lua require("soujow.functions").smart_quit()<CR>', "Quit" },
         f = {
             name = "+Find",
             b = { "<cmd>lua require('telescope.builtin').buffers()<cr>", "Buffers" },
