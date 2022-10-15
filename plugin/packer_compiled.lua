@@ -289,11 +289,6 @@ _G.packer_plugins = {
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
-  ["nvim-gps"] = {
-    loaded = true,
-    path = "/home/souhail/.local/share/nvim/site/pack/packer/start/nvim-gps",
-    url = "https://github.com/SmiteshP/nvim-gps"
-  },
   ["nvim-jdtls"] = {
     loaded = true,
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
@@ -303,6 +298,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/souhail/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-navic"] = {
+    loaded = true,
+    path = "/home/souhail/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    url = "https://github.com/SmiteshP/nvim-navic"
   },
   ["nvim-notify"] = {
     loaded = true,

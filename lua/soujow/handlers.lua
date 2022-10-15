@@ -7,7 +7,7 @@ if not status_cmp_ok then
     return
 end
 M.capabilities.textDocument.completion.completionItem.snippetSupport = true
-M.capabilities = cmp_nvim_lsp.update_capabilities(M.capabilities)
+M.capabilities = cmp_nvim_lsp.default_capabilities(M.capabilities)
 
 M.setup = function()
 
@@ -57,9 +57,18 @@ M.setup = function()
         -- height = 30,
     })
 end
-
+local function attach_navic(client, bufnr)
+    vim.g.navic_silence = true
+    local status_ok, navic = pcall(require, "nvim-navic")
+    if not status_ok then
+        return
+    end
+    navic.attach(client, bufnr)
+end
 
 M.on_attach = function(client, bufnr)
+    attach_navic(client, bufnr)
+
     if client.name == "jdtls" then
         client.server_capabilities.document_formatting = false
     end
