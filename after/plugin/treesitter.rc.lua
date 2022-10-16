@@ -8,7 +8,7 @@ ts.setup {
     },
     indent = {
         enable = true,
-        disable = { "python", "css", "rust" },
+        disable = { "python", "css", "rust", "cpp" },
     },
     ensure_installed = {
         "tsx",

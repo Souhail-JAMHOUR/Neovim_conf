@@ -77,6 +77,10 @@ M.on_attach = function(client, bufnr)
         client.server_capabilities.document_formatting = false
         require("lsp-inlayhints").on_attach(client, bufnr)
     end
+    if client.name == "clangd" then
+        client.server_capabilities.document_formatting = false
+        require("lsp-inlayhints").on_attach(client, bufnr)
+    end
 
     if client.name == "jdtls" then
         vim.lsp.codelens.refresh()

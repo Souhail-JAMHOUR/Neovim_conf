@@ -97,6 +97,12 @@ nvim_lsp.flow.setup {
 
 nvim_lsp.tsserver.setup {}
 
+nvim_lsp.clangd.setup {
+    capabilities = {
+        offsetEncoding = "UTF-8",
+    },
+}
+
 -- nvim_lsp.tsserver.setup {
 --   filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript" },
 --   cmd = { "typescript-language-server", "--stdio" },
@@ -106,9 +112,6 @@ nvim_lsp.tsserver.setup {}
 --   end,
 -- }
 
-nvim_lsp.sourcekit.setup {
-    on_attach = on_attach,
-}
 
 nvim_lsp.sumneko_lua.setup {
     on_attach = on_attach,

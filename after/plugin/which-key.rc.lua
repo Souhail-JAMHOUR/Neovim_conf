@@ -13,14 +13,15 @@ local keymap = {
         q = { '<cmd>lua require("soujow.functions").smart_quit()<CR>', "Quit" },
         f = {
             name = "+Find",
-            b = { "<cmd>lua require('telescope.builtin').buffers()<cr>", "Buffers" },
+            B = { "<cmd>lua require('telescope.builtin').buffers()<cr>", "Buffers" },
             h = { "<cmd>lua require('telescope.builtin').help_tags()<cr>", "Help" },
             f = { "<cmd>lua require('telescope.builtin').find_files()<cr>", "Find Files" },
             m = { "<cmd>lua require('telescope.builtin').marks()<cr>", "Marks" },
             o = { "<cmd>lua require('telescope.builtin').oldfiles()<cr>", "Old Files" },
             g = { "<cmd>lua require('telescope.builtin').live_grep()<cr>", "Live Grep" },
             c = { "<cmd>lua require('telescope.builtin').commands()<cr>", "Commands" },
-            r = { "<cmd>lua require'telescope'.extensions.file_browser.file_browser()<cr>", "File Browser" },
+            r = { "<cmd>lua require'telescope'.extensions.repo.list{}<CR>", "git_repo" },
+            -- r = { "<cmd>lua require'telescope'.extensions.file_browser.file_browser()<cr>", "File Browser" },
             w = { "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>", "Current Buffer" },
             p = { "<cmd>lua require'telescope'.extensions.projects.projects{display_type = 'full'}<cr>", "List" },
         },
@@ -55,8 +56,12 @@ local keymap = {
             f = { "<cmd>lua require('telescope.builtin').git_files()<CR>", "git_files" },
             b = { "<cmd>lua require('telescope.builtin').git_branches()<CR>", "git_branches" },
             c = { "<cmd>lua require('telescope.builtin').git_commits()<CR>", "git_commits" },
-            h = { "<cmd>Gitsigns preview_hunk<CR>", "Hunk" },
-            r = { "<cmd>lua require'telescope'.extensions.repo.list{}<CR>", "git_repo" }
+            s = {
+                h = { "<cmd>Gitsigns preview_hunk<CR>", "preview_hunk" },
+                r = { "<cmd>Gitsigns reset_hunk<CR>", "reset_hunk" },
+                n = { "<cmd>Gitsigns next_hunk<CR>", "reset_hunk" },
+                p = { "<cmd>Gitsigns prev_hunk<CR>", "previous_hunk" },
+            }
         },
         s = { "<cmd>luafile %<cr>", "Source file" },
         l = {
