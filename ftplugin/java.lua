@@ -99,7 +99,7 @@ local config = {
                 includeDecompiledSources = true,
             },
             format = {
-                enabled = true,
+                enabled = false,
             },
         },
         signatureHelp = { enabled = true },

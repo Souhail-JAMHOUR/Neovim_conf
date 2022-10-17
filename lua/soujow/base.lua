@@ -10,6 +10,7 @@ vim.notify = require("notify")
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
+vim.opt.undofile = true
 vim.opt.hlsearch = true
 vim.opt.backup = false
 vim.opt.showcmd = true
@@ -35,6 +36,8 @@ vim.g.mapleader = " "
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 
 -- Turn off paste mode when leaving insert
 -- vim.api.nvim_create_autocmd("InsertLeave", {

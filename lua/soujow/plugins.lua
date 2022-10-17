@@ -45,6 +45,7 @@ packer.startup(function(use)
     }
     use 'nvim-lualine/lualine.nvim' -- Statusline
     use 'nvim-lua/plenary.nvim' -- Common utilities
+    use 'lewis6991/impatient.nvim'
 
 
     --LSP
@@ -115,6 +116,7 @@ packer.startup(function(use)
     use 'shaunsingh/moonlight.nvim'
     use 'morhetz/gruvbox'
     use 'navarasu/onedark.nvim'
+    use 'folke/tokyonight.nvim'
 
     --Test
 
@@ -174,4 +176,5 @@ packer.startup(function(use)
         run = function() vim.fn["mkdp#util#install"]() end,
     })
     use "kyazdani42/nvim-tree.lua"
+    use 'tamago324/lir.nvim'
 end)

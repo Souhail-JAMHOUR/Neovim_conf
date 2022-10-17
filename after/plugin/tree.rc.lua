@@ -156,8 +156,6 @@ nvim_tree.setup {
     },
 }
 
-
-
 local wk = require("which-key")
 local km = {
     ["<leader>"] = {
